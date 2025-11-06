@@ -1,0 +1,91 @@
+body {
+  background-color: #f5f8fb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  color: rgb(216, 24, 72);
+  margin: 0;
+  font-size: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 200px;
+}
+
+#addBtn {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#addBtn:hover {
+  background: #eee;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+}
+
+#taskList li input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#taskList li span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+#taskList li button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #444;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#taskList li button:hover {
+  color: crimson;
+}
